@@ -1,12 +1,13 @@
 # stuycs-submit
 
-This is a program I designed for submitting assignments to bert.stuy.edu via the Terminal, for conveniency. It works on MacOS, but is currently .
+This is a program I designed for submitting assignments to bert.stuy.edu via the Terminal, for conveniency. It works on MacOS, but currently doesn't work on Windows, and may or may not work on Linux
+.
 
 ## Installation
 
 While I originally designed this program for myself, anyone is welcome to install this on their computer! To do so, do the following:
 
-To download all the prequisites, run: ```pip3 install requests beautifulsoup4 PyInquirer``` ([if you don't have pip, do this](https://pip.pypa.io/en/stable/installing/)).
+To download all the prequisites, run: ```pip3 install requests beautifulsoup4 PyInquirer``` ([if you don't have pip, follow this](https://pip.pypa.io/en/stable/installing/)).
 
 Download the code by running ```curl https://raw.githubusercontent.com/gthompson30/stuycs-submit/main/stuycs-submit.py --output stuycs-submit.py```
 
