@@ -32,3 +32,33 @@ At the bottom, write: ```alias stuycs-submit="{}/stuycs-submit"```, pasting what
 Do Ctrl+X to save the file. When prompted to "Save modified buffer", type ```y```. When prompted to edit the filename, don't change it, and press enter.
 
 Congratulations! You should now have stuycs-submit installed on your computer! To test if this is working, 
+
+## Authentication
+
+stuycs-submit stores your information login information permanently on your computer, so you only need to log in once.
+
+To log in, run the following:
+
+```stuycs-submit authenticate```
+
+This will prompt you for period, name, and password, to log in. To answer any prompt, use the up and down arrows, and press enter to submit the answer.
+
+If you enter any of your information wrong, the program will alert you, and you'll have to rerun the command to authenticate again.
+
+After authentication, you will be able to submit any file to assignment!
+
+## How to Submit
+
+To submit any file, run the following:
+
+```stuycs-submit [FILE]```, replacing "[FILE]" with your file name (you need to be in the same directory, or give the relative file path).
+
+The program will then prompt you which assignment to submit to, and then will prompt you to make a comment to teacher, similarly to on the homework server.
+
+To make no comment, simply press enter without typing anything.
+
+This should submit your file to the specified assignment! The program will give you a link to view the assignment on the homework server, and you can also check on the homework server to verify that the assignment was submitted.
+
+## Do I steal your passwords?
+
+No (:
