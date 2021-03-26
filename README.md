@@ -27,8 +27,8 @@ nano .bash_profile
 ```
 This will open up a GUI to edit .bash_profile. Go to the bottom of the file with the arrow keys, or via Ctrl+V.
 
-At the bottom, write: ```alias stuycs-submit="{}/stuycs-submit"```, pasting what you copied previously in place of the curly braces (```{}```}
+At the bottom, write: ```alias stuycs-submit="{}/stuycs-submit"```, pasting what you copied previously in place of the curly braces (```{}```}. IMPORTANT: If there are any spaces (" ") in what you copied to clipboard, add a backslash ("\") before them.
 
 Do Ctrl+X to save the file. When prompted to "Save modified buffer", type ```y```. When prompted to edit the filename, don't change it, and press enter.
 
-Congratulations! You should now have stuycs-submit installed on your computer!
+Congratulations! You should now have stuycs-submit installed on your computer! To test if this is working, 
