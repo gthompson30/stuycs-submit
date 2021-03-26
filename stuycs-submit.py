@@ -1,6 +1,12 @@
 #!/usr/bin/env python
 
 from sys import argv, stdout
+
+if len(argv) == 1:
+    print('\nusage: stuycs-submit authenticate')
+    print('       stuycs-submit [file name]\n')
+    exit()
+
 from requests import post
 from getpass import getpass
 from pickle import load, dump
@@ -9,11 +15,7 @@ from PyInquirer import prompt
 from examples import custom_style_2, custom_style_3
 from subprocess import run, PIPE
 from os import environ
-
-if len(argv) == 1:
-    print('\nCorrect usage: stuycs-submit authenticate')
-    print('               stuycs-submit [file name]\n')
-    exit()
+from platform import system
 
 p = {
     'p2': {
@@ -173,9 +175,24 @@ print('''\x1b[38;5;186m
                      |_|
 \033[0m''')
 
+platform = system()
+
 filepath = environ['HOME']
 
-if argv[1] == 'authenticate':
+directory = environ['PWD']
+
+if argv[1] in 'setup':
+    if platform == "Darwin":
+        print('\033[92;1;3mWelcome to setup! To view this in the browser \033[0m(\033[31;1;4;3mStrongly recommended\033[0m)\033[92;1;3m, visit:\033[0m\n\n\033[92mhttps://github.com/gthompson30/stuycs-submit/blob/main/README.md\033[0m')
+        print('\n\033[95mTo install stuycs-submit and allow it to be run from a Terminal command, run the following command:\033[0m')
+        print('\n\033[96mcp stuycs-submit.py stuycs-submit\ncd ~/\033[0m')
+        print('\n\033[95mCopy (don\'t run yet!) the following command:\n\033[0m')
+        print('\033[96malias stuycs-submit="'+directory+'/stuycs-submit"\033[0m')
+        print('\n\033[95mThen, run the following command (WARNING: this screen will go away):\n\033[0m')
+        print('\033[96mnano .bash_profile\033[0m\n')
+        print('\033[95m... and add the line you previously copied to the end of the file. When you\'re done, do Ctrl+X do exit.\033[0m\n')
+        print('\033[33;1;3mCongrats! You now have stuycs-submit set up. To authenticate, run \'stuycs-submit authenticate\'\033[0m\n')
+elif argv[1] == 'authenticate' or argv[1] == 'authentication':
     period = prompt({
         'type': 'list',
         'name': 'period',
