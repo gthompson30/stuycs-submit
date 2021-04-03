@@ -11,7 +11,7 @@ To download all the prequisites, run: ```pip3 install requests beautifulsoup4 Py
 
 Download the code by running ```curl https://raw.githubusercontent.com/gthompson30/stuycs-submit/main/stuycs-submit.py --output stuycs-submit.py```
 
-Open the directory of the download in Terminal, and run ```python3 stuycs-submit.py setup```. Then follow the instructions below to add ```stuycs-submit``` as a Terminal command:
+Next, run ```python3 stuycs-submit.py setup```. Then follow the instructions below to add ```stuycs-submit``` as a Terminal command:
 
 ```
 cp stuycs-submit.py stuycs-submit
