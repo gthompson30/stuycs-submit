@@ -32,7 +32,7 @@ At the bottom, write: ```alias stuycs-submit="{}/stuycs-submit"```, pasting what
 
 Do Ctrl+X to save the file. When prompted to "Save modified buffer", type ```y```. When prompted to edit the filename, don't change it, and press enter.
 
-Congratulations! You should now have stuycs-submit installed on your computer! To test if this is working, 
+Congratulations! You should now have stuycs-submit installed on your computer! To test if it's working, restart your terminal session by closing and reopening it, and run the command: ```stuycs-submit```. If all is working correctly, you should get a message informing you of the command's correct usage.
 
 ## Authentication
 
