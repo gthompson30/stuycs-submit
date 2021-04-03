@@ -28,7 +28,7 @@ nano .bash_profile
 ```
 This will open up a GUI to edit .bash_profile. Go to the bottom of the file with the arrow keys, or via Ctrl+V.
 
-At the bottom, write: ```alias stuycs-submit="{}/stuycs-submit"```, pasting what you copied previously in place of the curly braces (```{}```}. IMPORTANT: If there are any spaces (" ") in what you copied to clipboard (after the "alias" part of the command), add a backslash ("\\") before them.
+At the bottom, write: ```alias stuycs-submit="{}/stuycs-submit"```, pasting what you copied previously in place of the curly braces (```{}```}. IMPORTANT: If there are any spaces (" ") in what you copied to clipboard (after the "alias" part of the command), add a backslash ("\\", typed by holding shift and pressing the key above the enter key) before them.
 
 Do Ctrl+X to save the file. When prompted to "Save modified buffer", type ```y```. When prompted to edit the filename, don't change it, and press enter.
 
