@@ -1,7 +1,6 @@
 # stuycs-submit
 
-This is a program I designed for submitting assignments to bert.stuy.edu via the Terminal, for conveniency. It works on MacOS, but currently doesn't work on Windows, and may or may not work on Linux
-.
+This is a program I designed for submitting assignments to bert.stuy.edu via the Terminal, for conveniency. It works on MacOS, but currently doesn't work on Windows, and may or may not work on Linux.
 
 ## Installation
 
